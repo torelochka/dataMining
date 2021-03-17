@@ -7,7 +7,7 @@ from database import main
 
 args = {
     'owner': 'airflow',
-    'start_date': dt.datetime(2020, 2, 11),
+    'start_date': dt.datetime.now(),
     'retries': 1,
     'retry_delay': dt.timedelta(minutes=1),
     'depends_on_past': False,
