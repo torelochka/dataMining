@@ -1,12 +1,9 @@
-import os
 import datetime as dt
 
-import requests
-import pandas as pd
 from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
 
-from dataMining.vk_parse.database import main
+from database import main
 
 args = {
     'owner': 'airflow',
