@@ -26,10 +26,3 @@ def create_graph(d):
 
     nx.draw_random(G, with_labels=False, **options)
     plt.savefig('graph.png')
-
-if __name__ == '__main__':
-    import json
-
-    with open('dataqqq.json') as json_file:
-        data = json.load(json_file)
-    create_graph(data)

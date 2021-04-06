@@ -5,7 +5,7 @@ np.seterr(divide='ignore', invalid='ignore')
 
 
 def matrix_from_graph():
-    G = nx.read_gml('remote.gml')
+    G = nx.read_gml('graph.gml')
 
     A = nx.adjacency_matrix(G)
 

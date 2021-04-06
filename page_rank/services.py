@@ -1,5 +1,4 @@
 import asyncio
-import codecs
 import json
 import re
 
@@ -10,7 +9,6 @@ from bs4 import BeautifulSoup
 
 def get_page_links(URL, depth, page_and_links, links, max_depth):
     if depth < max_depth:
-        # links.append(URL)
         li = []
         if URL in page_and_links.keys():
             li = page_and_links.get(URL)
